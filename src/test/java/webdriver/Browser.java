@@ -3,9 +3,6 @@ package webdriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
- * Created by Aleksandr on 28.07.2016.
- */
 public class Browser {
     private static WebDriver driver;
 

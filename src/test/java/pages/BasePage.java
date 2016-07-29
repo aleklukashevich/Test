@@ -7,7 +7,6 @@ import ru.yandex.qatools.htmlelements.loader.decorator.HtmlElementDecorator;
 import webdriver.Browser;
 
 abstract class BasePage{
-        //TODO do not extend
     protected WebDriverWait wait;
     protected WebDriver driver;
 

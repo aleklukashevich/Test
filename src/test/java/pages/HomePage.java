@@ -7,8 +7,6 @@ import ru.yandex.qatools.htmlelements.element.Form;
 import ru.yandex.qatools.htmlelements.element.Link;
 import ru.yandex.qatools.htmlelements.element.TextInput;
 
-import java.util.List;
-
 public class HomePage extends BasePage {
 
     @FindBy(xpath = "//*[@id='authorize']//a[contains(@class,'enter')]")
@@ -29,11 +27,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@id='authorize']//a[text()='Почта']")
     private Link emailLink;
 
-    @FindBy(xpath = ".//a[contains(text(),'Входящие')]")
-    private Link inbox;
 
-    @FindBy(xpath = "//*[@class='block-messages-wrap']//div[contains(@class,'js-message-id')]")
-    private List<Link> messagesList;
 
     public HomePage login(String id, String psw){
         enterLink.click();

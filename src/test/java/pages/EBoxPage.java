@@ -2,6 +2,7 @@ package pages;
 
 
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import ru.yandex.qatools.htmlelements.element.Link;
 
 import java.util.List;
@@ -15,6 +16,7 @@ public class EBoxPage extends BasePage {
     private List<Link> messagesList;
 
     public int getInboxMessagesCount(){
+        wait.until(ExpectedConditions.visibilityOf(inbox.getWrappedElement()));
         inbox.click();
         return messagesList.size();
     }
