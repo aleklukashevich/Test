@@ -25,6 +25,6 @@ public class LoginTest extends BaseTest{
                 .proceedToTheEBox()
                 .getInboxMessagesCount();
 
-       Assert.assertEquals(inboxM,2,"Email Box contains much more letters, than you've expected to see");
+       Assert.assertEquals(inboxM,2,"Email Box contains much more/less letters, than you've expected to see");
     }
 }
