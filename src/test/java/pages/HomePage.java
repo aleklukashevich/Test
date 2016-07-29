@@ -41,12 +41,16 @@ public class HomePage extends BasePage {
     public EBoxPage proceedToTheEBox(){
         enterLink.click();
         emailLink.click();
+        //close parent window
+        driver.switchTo().window(driver.getWindowHandle()).close();
+        //switch to new window
         for(String winHandle : driver.getWindowHandles()){
             driver.switchTo().window(winHandle);
         }
         driver.switchTo().defaultContent();
         return new EBoxPage();
     }
+
 
 
 }
